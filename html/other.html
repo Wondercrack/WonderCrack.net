@@ -3,34 +3,46 @@
 <head>
 	<meta charset="utf-8">
 	<title>Wondy</title>
+ 
+    <script type="text/javascript" src="/javascript/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="/texteditor/minified/themes/default.min.css" type="text/css" media="all" />
+    <script type="text/javascript" src="/texteditor/minified/jquery.sceditor.bbcode.min.js"></script>
+	
+	<script src="/javascript/texteditorOther.js?2"></script>
+ 
+ 	<link rel="stylesheet" href="/css/normalize.css">
 	<link rel="stylesheet" href="/css/mainStyle.css">
+
+    <script>
+    $(function() {
+        $("textarea").sceditor({
+            plugins: "xhtml",
+            style: "/texteditor/minified/jquery.sceditor.default.min.css"
+        });
+    });
+    </script>
 </head>
-
-
-
 <body>
 	<div id="nav">
 		<div id="top_nav">
-			<li><a href="/html/documents.html">Documents</a></li>
-			<li><a href="/html/games.html">Games</a></li>
-			<li><a class="active" href="/html/other.html">Other</a></li>
+			<a id="home" href="/index.html">Home</a>
+			<ul>
+				<li><a href="documents.html">Documents</a></li>
+				<li><a href="/html/games.html">Games</a></li>
+				<li><a class="active" href="/html/other.html">Other</a></li>
+			</ul>
 		</div>
-		<div id="home_nav">
-			<li style="float:left"><a href="/index.html">Home</a></li>
-		</div>
-		<div id="left_nav">
-			<li><a href="newdoc.html">New Document</a></li>
-			<li><a href="newdoc.html">New Document</a></li>
-			<li><a href="newdoc.html">New Document</a></li>
-			<li><a href="newdoc.html">New Document</a></li>
+		<div id="left_nav"><ul></ul></div>
+	</div>
+	<div id="wrapper">
+		<form id="saveform" style=" text-align: center; font-size: 30">
+			<p>Title:</p>
+			<input type="text" id="filename">
+			<input type="submit" class="styledButton" value="Save">
+		</form>	
+		<div id="editor">
+			<textarea type="text"></textarea>
 		</div>
 	</div>
 </body>
-
-
-
-
-
-
-
 </html>
