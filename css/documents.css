@@ -1,0 +1,110 @@
+body {
+	
+	font-family: serif;
+	margin: 0;
+}
+
+.active {
+	background-color: #4CAF50;
+}
+
+#nav {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#nav ul {
+    margin: 0 auto;
+    font-family: 'Noto Sans', sans-serif;
+    padding: 0;
+    list-style: none;
+    font-size: 1.2em;
+}
+
+#nav ul li {
+    width: 197.5px;
+    float: left;
+    border-right: 2px solid #5DAFDB;
+    transition-duration: .8s;
+}
+
+#nav ul li a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: block;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#nav ul li:hover {
+    background: #5DAFDB;
+}
+
+#nav ul li:first-child {
+    border-left: 2px solid #5DAFDB;
+}
+
+
+
+#editor {
+	position: fixed;
+	margin-left: 6cm;
+	margin-top: 4cm;
+}
+
+#saveform {
+	position: fixed;
+	margin-left: 6cm;
+	margin-top: 2cm;
+}
+
+#save_title {
+	display: block;	
+	font-size: 30;
+}
+
+.styledButton {
+ background-color:#ffffff;
+ border:1px solid #000000;
+ display:inline-block;
+ cursor:pointer;
+ color:#000000;
+ font-family:Arial;
+ font-size:14px;
+ padding:6px 28px;
+ text-decoration:none;
+}
+.styledButton:hover {
+ background-color: lightgray;
+}
+.styledButton:active {
+ position:relative;
+ top:1px;
+}
+
+input[type=file].styledButton {
+    -webkit-box-sizing: border-box;
+}
+
+input[type=file].styledButton::-webkit-file-upload-button {
+    width: 0;
+    padding: 0;
+    margin: 0;
+    -webkit-appearance: none;
+    border: none;
+}
+
+.lightGreyBackground {
+    background-color: lightgrey;
+}
+
+.greenBackground{
+	background-color: #4CAF50;
+}
+
+.document{
+
+}

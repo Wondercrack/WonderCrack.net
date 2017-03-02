@@ -1,0 +1,169 @@
+body {
+	min-width: 1200px;
+	font-family: serif;
+}
+
+.active {
+	background-color: #4CAF50;
+}
+
+/*modified---------------------------start*/
+#top_nav {
+	min-width: 1200px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #333;
+	font-size:0;
+}
+
+#top_nav ul {
+	position: relative;
+	left: 75px;
+	width: 452px;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+}
+
+#top_nav li {
+	display: inline-block;
+	border-right: 1px solid black;
+}
+
+#top_nav li:last-child {
+	border: 0;
+}
+
+#top_nav a {
+	text-align: center;	
+	display: block;
+	width: 150px;
+	padding: 18.5px 0px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+#top_nav a:hover {
+	transition-duration: 0.4s;
+	background-color: #4CAF50;
+}
+
+#home {
+    float: left;
+	border-right: 1px solid black;
+}
+
+#left_nav {
+	position: fixed;
+	top: 60px;
+	left: 0;
+	height: 100%;
+	width: 150px;
+	background-color: #333;
+}
+
+#left_nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#left_nav li{
+	border-top: 1px solid black;
+}
+
+#left_nav li:last-child {
+    border-bottom: 1px solid black;
+}
+
+#left_nav button {
+	width: 150px;
+	display: block;
+	color: white;
+	background-color: #333;
+	font-size: 15px;
+	border: 0;
+}
+
+#left_nav button:hover {
+	transition-duration: 0.4s;
+	background-color: #4CAF50;
+}
+
+#wrapper {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+	top: 60px;
+	left: 75px;
+}
+
+#editor textarea{
+	width: 100%;
+	height: 500px;
+}
+
+#saveform {
+	width: 100%;
+	height: 30px;
+	margin: 10px 0;
+	display: block;
+}
+
+#saveform p{
+	margin: 0;
+	width: 80px;
+	float: left;
+	font-size: 26px;
+}
+
+#saveform input[type=text]{
+	margin: auto 0;
+	height: 30px;
+	width: 800px;
+	float: left;
+}
+
+#saveform input[type=submit]{
+	width: 100px;
+	float: right;
+}
+/*modified---------------------------end*/
+
+.styledButton {
+ background-color:#ffffff;
+ border:1px solid #000000;
+ display:inline-block;
+ cursor:pointer;
+ color:#000000;
+ font-family:Arial;
+ font-size:14px;
+ padding:6px 28px;
+ text-decoration:none;
+}
+.styledButton:hover {
+ background-color: lightgray;
+}
+.styledButton:active {
+ position:relative;
+ top:1px;
+}
+
+input[type=file].styledButton {
+    -webkit-box-sizing: border-box;
+}
+
+input[type=file].styledButton::-webkit-file-upload-button {
+    width: 0;
+    padding: 0;
+    margin: 0;
+    -webkit-appearance: none;
+    border: none;
+}
+
+.greenBackground{
+	background-color: #4CAF50;
+}
